@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Toggle led</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='switchery.min.css') }}" type="text/css" >
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="header">Encender/Apagar led</h2>
+      <!--<button class="btn" onclick="toggleLed()">Presiona</button>-->
+      <input type="checkbox" id="switch"/>
+
+      <div class="registry">
+        <h4>Ultima actividad</h4>
+        <ul class="registry-list">
+        </ul>
+      </div>
+    </div>
+    <small>Jaime Avendaño Villa @ 2016</small>
+
+    <script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='switchery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+  </body>
+</html>
